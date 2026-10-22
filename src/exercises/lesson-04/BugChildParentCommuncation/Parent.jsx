@@ -12,7 +12,9 @@ export default function Parent() {
     <div>
       <h2>Parent-Child Communication</h2>
       <p>Counter: {count}</p>
-      <Child />
+      <Child onIncrement={increment} />
     </div>
   );
 }
+
+// Child calls the parent's function when the button is clicked.
